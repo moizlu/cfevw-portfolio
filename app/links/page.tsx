@@ -6,7 +6,7 @@ export default function About() {
       "name": "Discord",
       "icon_url": "",
       "identity": "cfevw",
-      "identity_url": "https://dicord.com/app",
+      "identity_url": "https://discord.com/app",
     },
     {
       "name": "GitHub",
@@ -21,8 +21,8 @@ export default function About() {
       <h1>cfevw's Links</h1>
       <table>
         <tbody>
-          {LINKS.map((link) => {
-            return (<tr><td>{link.name}</td><td><a href={link.identity_url}>{link.identity}</a></td></tr>);
+          {LINKS.map((link, i) => {
+            return (<tr key={i}><td>{link.name}</td><td><a href={link.identity_url}>{link.identity}</a></td></tr>);
           })}
         </tbody>
       </table>
