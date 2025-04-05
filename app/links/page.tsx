@@ -7,17 +7,25 @@ export default function About() {
       "icon_url": "",
       "identity": "cfevw",
       "identity_url": "https://dicord.com/app",
-    }
+    },
+    {
+      "name": "GitHub",
+      "icon_url": "",
+      "identity": "cfevw",
+      "identity_url": "https://github.com/cfevw",
+    },
   ];
 
   return (
     <>
       <h1>cfevw's Links</h1>
-      <table><tbody>
-        {LINKS.map((link) => {
-          return (<tr><td>{link.name}</td><td>{link.identity}</td></tr>);
-        })}
-      </tbody></table>
+      <table>
+        <tbody>
+          {LINKS.map((link) => {
+            return (<tr><td>{link.name}</td><td><a href={link.identity_url}>{link.identity}</a></td></tr>);
+          })}
+        </tbody>
+      </table>
       <div>
         Back to <Link href="/">Home</Link>
       </div>
