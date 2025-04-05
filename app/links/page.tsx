@@ -15,7 +15,7 @@ export default function About() {
       <h1>cfevw's Links</h1>
       <table><tbody>
         {LINKS.map((link) => {
-          return (<tr><td>link.name</td><td>link.identity</td></tr>);
+          return (<tr><td>{link.name}</td><td>{link.identity}</td></tr>);
         })}
       </tbody></table>
       <div>
