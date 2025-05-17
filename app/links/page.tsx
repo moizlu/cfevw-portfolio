@@ -17,9 +17,9 @@ export default function About() {
   ];
 
   return (
-    <>
+    <div className="text-center">
       <h1>cfevw's Links</h1>
-      <table>
+      <table className="text-center">
         <tbody>
           {LINKS.map((link, i) => {
             return (<tr key={i}><td>{link.name}</td><td><a href={link.identity_url}>{link.identity}</a></td></tr>);
@@ -29,6 +29,6 @@ export default function About() {
       <div>
         Back to <Link href="/">Home</Link>
       </div>
-    </>
+    </div>
   );
 }
