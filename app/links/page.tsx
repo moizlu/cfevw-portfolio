@@ -18,7 +18,7 @@ export default function About() {
 
   return (
     <div className="text-center">
-      <h1>cfevw's Links</h1>
+      <h1 className="text-3xl m-3">cfevw's Links</h1>
       <table className="text-center">
         <tbody>
           {LINKS.map((link, i) => {
