@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function About() {
+export default function LinksPage() {
   const LINKS = [
     {
       "name": "Discord",
@@ -26,7 +26,7 @@ export default function About() {
             return (
               <tr key={i} className="border border-gray-600">
                 <td className="py-3 px-6 bg-gray-700 text-white uppercase text-sm leading-normal">
-                    {link.icon_url ? (
+                    {link.icon_url && (
                       <Image
                         src={link.icon_url}
                         alt={`${link.name} icon`}
@@ -34,7 +34,7 @@ export default function About() {
                         height={20}
                         style={{ display: "inline", marginRight: 8, verticalAlign: "middle" }}
                       />
-                    ) : null}
+                    )}
                     {link.name}
                 </td>
                 <td className="py-3 px-6 hover:bg-gray-600 underline">
